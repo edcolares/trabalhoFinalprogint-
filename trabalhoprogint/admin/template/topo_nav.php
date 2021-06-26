@@ -3,7 +3,7 @@
     <!-- LOGOTIPO E NOME NO CANTO SUPERIOR ESQUERDO -->
     <a class="navbar-brand" href="index.php">
         <i class="fas fa-user-cog"></i>
-
+<!fjweifjwioj-->
 
         <img src="../imagens/administration-icon.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
         Área Administrativa
