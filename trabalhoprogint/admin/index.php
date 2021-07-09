@@ -38,7 +38,7 @@ if (isset($_SESSION['ativa'])) : ?>
 		?>
 
 		<!-- CONTAINER -> .container-fluid para um container com de largura total -->
-		<div class="container-fluid">
+		<div class="container">
 
 			<!-- AREA DE TOPO: ARQUIVO TOPO_NAV.PHP -->
 			<div class="row">
@@ -50,17 +50,18 @@ if (isset($_SESSION['ativa'])) : ?>
 			<!-- AREA CENTRAL: MENU ESQUERDO + AREA DE CONTEUDO -->
 			<div class="row">
 				<!-- MENU ESQUERDO -->
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<?php include "template/area_central_menu.php"; ?>
 				</div>
 				<!-- AREA DE CONTEUDO -->
-				<div class="col-sm-8">
+				<div class="col-sm-9">
 					class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"class="col-8"
 				</div>
 			</div>
 
 			<!-- RODAPE -->
-			<div class="row fixed-bottom">
+
+			<div class="row">
 				<div class="col-sm-12">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, iusto eos eum voluptates cumque, deleniti unde commodi libero est, nisi quam! Corporis laboriosam illo esse recusandae eum temporibus reiciendis deserunt.
 				</div>

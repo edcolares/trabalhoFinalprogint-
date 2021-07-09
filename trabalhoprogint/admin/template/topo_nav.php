@@ -24,21 +24,33 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="paginas.php">Páginas</a>
+                <!-- Inicio paginas -->
+                <?php
+                $where = " publicado = 1 AND categoria = 'Páginas' ";
+                $menus = resultados($conexao, "paginas", $where); ?>
+
+                <?php foreach ($menus as $menu) { ?>
+            <li>
+                <a href="paginas.php?pagina=<?php echo $menu['id']; ?>"><?php echo $menu['titulo']; ?></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="usuarios.php">Usuários</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bem vindo, <?php echo $userLogado['nome']; ?>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <!-- EDITAR DADOS DO USUÁRIO -->
-                    <a class="dropdown-item" href="#">Meu Cadastro</a>
-                    <!-- FAZER LOGOUT -->
-                    <a class="dropdown-item" href="sair.php">Sair</a>
-                </div>
-            </li>
+        <?php } ?>
+
+        <!-- fim paginas -->
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="usuarios.php">Usuários</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Bem vindo, <?php echo $userLogado['nome']; ?>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <!-- EDITAR DADOS DO USUÁRIO -->
+                <a class="dropdown-item" href="#">Meu Cadastro</a>
+                <!-- FAZER LOGOUT -->
+                <a class="dropdown-item" href="sair.php">Sair</a>
+            </div>
+        </li>
         </ul>
     </div>
 </nav>

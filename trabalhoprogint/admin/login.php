@@ -25,6 +25,17 @@ logar($conexao);
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Painel de Acesso - Área Administrativa</title>
+	<style>
+
+		.container-fluid {
+			width: 100%;
+			max-width: 330px;
+			padding: 30px;
+			margin: 0 auto;
+			background-color: #fff;
+			border-radius: 2%;
+		}
+	</style>
 
 </head>
 
