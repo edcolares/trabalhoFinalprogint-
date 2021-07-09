@@ -1,3 +1,53 @@
-* {
+ * {
     font-family: 'Roboto', 'KOHO', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+html, body{
+    height: 100%;
+}
+
+.login{
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.form-email{
+    width: 50%;
+    margin-bottom: 0%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+.form-senha{
+    width: 50%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.form-login{
+    margin-top: 2x;
+    position: center;
+    border-style: solid;
+    height: 50%;
+}
+
+.btn_logar{
+    background-color: rgb(48, 48, 49);
+    width: 45%;
+    margin-left: 20%;
+}
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+} */
+
+#rodape_final{
+    background-color: #000;
+    color: red;
+}
+
